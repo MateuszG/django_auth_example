@@ -7,8 +7,8 @@ from django.http import HttpResponse
 
 
 def login_view(request):
-    language = 'en'
-    session_language = 'en'
+    lang = 'en'
+    session_lang = 'en'
 
     context = {}
     context.update(csrf(request))
