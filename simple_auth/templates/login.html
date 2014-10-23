@@ -3,6 +3,9 @@
 <head></head>
 <body>
 <form action="/auth/" method="POST"> {% csrf_token %}
+    <h2>Cookie Language is {{ language }}</h2>
+    <h2>Session Language is {{ session_language }}</h2>
+
     <div data-role="fieldcontain">
         <label for="email">Email:</label><input type="email" name="email" id="email" value="" />
     </div>
